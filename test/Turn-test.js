@@ -13,7 +13,7 @@ describe('Turn', () => {
   turn = new Turn('pug', card);
 });
 
-it('should be a function', () => {
+it('should be a function', function() {
   expect(Turn).to.be.a('function');
 });
 

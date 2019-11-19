@@ -16,3 +16,20 @@ describe('Deck', () => {
   card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
   deck = new Deck([card1, card2, card3]);
 });
+
+it('should be a function', function() {
+  expect(Deck).to.be.a('function');
+});
+
+it('should be an instance of Deck', function() {
+  expect(deck).to.be.an.instanceof(Deck);
+});
+
+it('should store cards', function() {
+  expect(deck.cards).to.deep.equal([card1, card2, card3]);
+})
+
+it('should count cards', function() {
+  expect(deck.countCards()).to.equal(3);
+})
+});
