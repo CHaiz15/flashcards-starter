@@ -102,12 +102,4 @@ it('should calculate the percentage of correct guesses', function() {
   expect(round.percentCorrect).to.equal(50);
 });
 
-it('should print percent of correct guesses', function () {
-  round.takeTurn('pug');
-  round.takeTurn('gallbladder');
-  round.calculatePercentCorrect();
-
-  expect(round.endRound()).to.equal('** Round over! ** You answered 50% of the questions correctly!');
-});
-
 });
