@@ -102,4 +102,9 @@ it('should calculate the percentage of correct guesses', function() {
   expect(round.percentCorrect).to.equal(50);
 });
 
+it('should output the time in seconds the game took', function() {
+  round.endRound();
+  expect(round.totalTime).to.not.equal(0);
+})
+
 });

@@ -22,14 +22,13 @@ it('should have a default value for currentRound', function() {
   expect(game.currentRound).to.equal(0);
 });
 
-it.skip('should increment currentRound by 1 after each round', function() {
+it('should increment currentRound by 1 after each round', function() {
   game.start();
   expect(game.currentRound).to.equal(1);
 });
 
 it.skip('should instantiate a new Deck class', function() {
   game.start();
-  expect()
+  expect();
 });
-
 });

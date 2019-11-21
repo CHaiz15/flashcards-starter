@@ -38,10 +38,12 @@ it('should return the stored card', function() {
 });
 
 it.skip('should evaluate to true if the user\'s guess is correct', function() {
+  turn.evaluateGuess();
   expect(turn.evaluateGuess()).to.equal(true);
 });
 
 it('should evaluate to false if the user\'s guess is incorrect', function() {
+  turn.evaluateGuess();
   expect(turn.evaluateGuess()).to.equal(false);
 });
 
