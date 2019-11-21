@@ -11,25 +11,25 @@ describe('Deck', () => {
   let deck;
 
   beforeEach(() => {
-  card1 = new Card(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter');
-  card2 = new Card(14, 'What organ is Khalid missing?', ['spleen', 'appendix', 'gallbladder'], 'gallbladder');
-  card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
-  deck = new Deck([card1, card2, card3]);
-});
+    card1 = new Card(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter');
+    card2 = new Card(14, 'What organ is Khalid missing?', ['spleen', 'appendix', 'gallbladder'], 'gallbladder');
+    card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
+    deck = new Deck([card1, card2, card3]);
+  });
 
-it('should be a function', function() {
-  expect(Deck).to.be.a('function');
-});
+  it('should be a function', function() {
+    expect(Deck).to.be.a('function');
+  });
 
-it('should be an instance of Deck', function() {
-  expect(deck).to.be.an.instanceof(Deck);
-});
+  it('should be an instance of Deck', function() {
+    expect(deck).to.be.an.instanceof(Deck);
+  });
 
-it('should store cards', function() {
-  expect(deck.cards).to.deep.equal([card1, card2, card3]);
-})
+  it('should store cards', function() {
+    expect(deck.cards).to.deep.equal([card1, card2, card3]);
+  })
 
-it('should count cards', function() {
-  expect(deck.countCards()).to.equal(3);
-})
+  it('should count cards', function() {
+    expect(deck.countCards()).to.equal(3);
+  })
 });
